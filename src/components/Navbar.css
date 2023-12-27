@@ -1,0 +1,118 @@
+.nav_container{
+    display: flex;
+    flex-direction: row;
+    min-height: 70px;
+    background-color: aqua;
+    position: sticky;
+    top: 0px;
+}
+.logo{
+    margin-top: 15px;
+    margin-left: 15px;
+    font-size: larger;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.navbar,.navbar_mob{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.show_hide{
+    display: none;
+}
+.cotegry,.cotegry_mob{
+    display: flex;
+    flex-direction: row;
+}
+.item{
+    margin: 15px;
+    font-size: larger;
+    font-weight: 500;
+}
+.item:hover{
+    cursor: pointer;
+    color: rgb(255, 142, 4);
+}
+
+/* checkBox css */
+/* Styling for the label that wraps the checkbox and ball */
+.radio,.radio_mob{
+    border: 5px solid black;
+    margin-top: 15px;
+    width: 80px;
+    height: 30px;
+    border-radius: 50px;
+    margin-left: 20px;
+    text-align: center;
+    cursor: pointer;
+}  
+
+
+  /* Styling for the ball inside the label */
+
+  
+  /* Styling for the ball when the checkbox is checked */
+
+.drop_down,.country_mob,.drop_down_mob{
+    height: 40px;
+    margin-top: 11px;
+    border: none;
+    background-color: aqua;
+    font-weight: bold;
+    font-size: large;
+}
+
+
+
+@media (max-width: 768px){
+.navbar_mob{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-left: 25%;
+}
+.cotegry_mob{
+    display: flex;
+    flex-direction: column;
+}
+.drop_down_mob{
+    width: 100px;
+    height: 40px;
+    margin-top: 15px;
+    background-color: aqua;
+}
+.radio_mob{
+    border: 5px solid black;
+    margin-top: 10px;
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+    
+.show_hide{
+    display:block;
+    margin-top: 15px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.show_hide_line{
+    width: 40px;
+    height: 5px;
+    margin-top: 7px;
+    background-color: black;
+}
+.cotegry{
+    display: none;
+}
+.radio{
+    display: none;
+}
+
+.drop_down{
+    display: none;
+}
+
+}

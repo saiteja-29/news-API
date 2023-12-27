@@ -1,0 +1,83 @@
+.card_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30%;
+  min-width: 380px;
+  margin: 10px 0px;
+  padding: 1px;
+  box-shadow: 0 4px 8px 0 #e0070733, 0 6px 20px 0 rgba(244, 7, 7, 0.19);
+}
+
+.card_img {
+    width: 100%;
+    max-height: 18rem;
+    object-fit: contain;
+    
+}
+.img_not_found{
+  width: 100%;
+  text-align: center;
+  margin-top: 5rem;  
+  color: rgb(92, 203, 166);
+  font-size: xx-large;
+  font-weight: 500;
+}
+
+
+.button_group{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.button{
+  text-decoration: none;
+  text-align:center;
+  padding-top: 5px;
+  margin-bottom: 10px;
+  width: 100px;
+  height: 40px;
+  background-color: bisque;
+  color: black;
+  font-weight: 500;
+  margin-top: 5px;
+  border: 1px solid rgb(47, 10, 125);
+}
+.button:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  cursor: pointer;
+}
+
+.card_header_dark,.card_header{  
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Number of lines to show before ellipsis */
+  -webkit-box-orient: vertical;
+  white-space: normal; /* Allow the first line to wrap */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: x-large;
+  font-weight: 500;
+  margin: 3px;
+}
+
+.card_text,.card_text_dark{
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* Number of lines to show before ellipsis */
+  -webkit-box-orient: vertical;
+  white-space: normal; /* Allow the first line to wrap */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size:large;
+  margin: 5px;
+}
+
+
+.card_header_dark{
+  color: rgb(157, 154, 219);
+}
+
+.card_text_dark{
+  color: white;
+}
